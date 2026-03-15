@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: archgen-ai-engine
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: MOCK_MODE
+        value: true
+      - key: LLM_PROVIDER
+        value: groq
+      - key: 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
+        sync: false

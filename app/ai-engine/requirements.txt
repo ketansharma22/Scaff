@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+pydantic-settings
+httpx
+tenacity
+structlog
+qdrant-client
+celery
+redis
+python-dotenv
+groq

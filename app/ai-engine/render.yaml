@@ -11,3 +11,5 @@ services:
         value: groq
       - key: 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
         sync: false
+      - key: PYTHON_VERSION
+        value: "3.11"
